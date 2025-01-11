@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'slave' }
 
     environment {
         ANSIBLE_HOST_KEY_CHECKING = 'False' // Disable host key checking if needed
